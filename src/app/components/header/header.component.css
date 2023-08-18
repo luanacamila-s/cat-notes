@@ -2,9 +2,11 @@
   width: 435px;
   height: 100vh;
   background: rgba(246, 246, 246, 0.96);
+  z-index: 1;
+  margin-top: -420px;
 }
 
-h1 {
+.logo h1 {
   color: rgba(15, 65, 111, 0.94);
   font-family: Roboto;
   font-size: 64px;
@@ -15,11 +17,32 @@ h1 {
   line-height: normal;
 }
 
-h1 span {
+.logo h1 span {
   color: #000;
   font-family: Roboto;
   font-size: 64px;
   font-style: normal;
   font-weight: 700;
-  line-height: normal;
 }
+.cor-escuro {
+  color: #353535;
+  font-family: Roboto;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 60px;
+
+}
+
+h1 {
+  color: #787878;
+  text-align: center;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Roboto;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.30px;
+  line-height: 60px;
+}
+
