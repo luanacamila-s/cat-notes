@@ -4,10 +4,12 @@
     alt=""
     class="background_cat"
   />
-  <h1 class="title">Study Notes 📚</h1>
 </div>
+<h1 class="title">Study Notes 📚</h1>
 
-<div class="add_note">
-  <h2 class="new_note">New</h2>
-  <img src="../../../assets/images/add-icon.svg" alt="" class="add_note" />
-</div>
+<app-add-button
+  (click)="openModal()"
+></app-add-button>
+
+<app-whiteboard></app-whiteboard>
+

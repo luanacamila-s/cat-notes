@@ -6,6 +6,10 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ProfileBoxComponent } from './components/profile-box/profile-box.component';
 import { MainComponent } from './components/main/main.component';
+import { AppAddButtonComponent } from './components/app-add-button/AppAddButtonComponent';
+import { AppWhiteboardComponent } from './components/app-whiteboard/app-whiteboard.component';
+import { NoteItemComponent } from './components/note-item/note-item.component';
+import { ModalComponent } from './components/modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +17,10 @@ import { MainComponent } from './components/main/main.component';
     HeaderComponent,
     ProfileBoxComponent,
     MainComponent,
+    AppAddButtonComponent,
+    AppWhiteboardComponent,
+    NoteItemComponent,
+    ModalComponent,
   ],
   imports: [
     BrowserModule,

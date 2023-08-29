@@ -1,0 +1,27 @@
+:host {
+  margin-left: 30px;
+  background: #0F416F;
+  width: 200px;
+  height: 95px;
+  z-index: 10;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  gap: 10px;
+}
+
+button {
+  transition: 300ms all ease-in-out;
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #f6f6f6;
+  font-size: 3rem;
+}
+
+button:active {
+  transform: scale(0.9);
+}
