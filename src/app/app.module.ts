@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ProfileBoxComponent } from './components/profile-box/profile-box.component';
 import { MainComponent } from './components/main/main.component';
-import { AppAddButtonComponent } from './components/app-add-button/AppAddButtonComponent';
+import { AppAddButtonComponent } from './components/app-add-button/app-add-button.component';
 import { AppWhiteboardComponent } from './components/app-whiteboard/app-whiteboard.component';
 import { NoteItemComponent } from './components/note-item/note-item.component';
 import { ModalComponent } from './components/modal/modal.component';

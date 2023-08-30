@@ -4,4 +4,5 @@ export type TodoItem = {
   done: boolean
   createdAt: Date;
   updatedAt: Date | null;
+  color: string;
 }

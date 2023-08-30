@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, HostBinding, Input, OnInit, Output } from '@angular/core';
 import { TodoItem } from 'src/models/todo-item';
 
 @Component({
@@ -9,18 +9,21 @@ import { TodoItem } from 'src/models/todo-item';
 
 // TODO passar CSS para esse componente de acordo com o Figma
 export class NoteItemComponent implements OnInit {
-  @Input() todo: TodoItem;
+  @Input() todo!: TodoItem;
   @Output() deleteItem = new EventEmitter<number>();
   @Output() editItem = new EventEmitter<TodoItem>();
 
+  @HostBinding('style.background')
+  background = 'red'
+
+  formattedDate!: string;
+
   constructor() {
-    this.todo = {
-      id: 1,
-      description: '',
-      done: false,
-      updatedAt: null,
-      createdAt: new Date(),
-    }
+  }
+
+
+  formatterDate(time: Date): string {
+    return time.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true })
   }
 
   deleteNote(id: number) {
@@ -35,5 +38,9 @@ export class NoteItemComponent implements OnInit {
     })
   }
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.formattedDate = this.formatterDate(this.todo.createdAt)
+    this.background = this.todo.color;
+
+  }
 }

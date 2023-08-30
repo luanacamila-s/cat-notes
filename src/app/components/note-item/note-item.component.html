@@ -2,7 +2,12 @@
   {{
     todo.description
   }}
-  <button (click)="deleteNote(todo.id)">
-    deletar
-  </button>
 </p>
+<div class="utils">
+  <span class="delete__icon" src="../../../assets/images/trash-icon.svg" alt=""></span>
+  <h3 class="created__at">
+    {{
+      formattedDate
+    }}
+  </h3>
+</div>

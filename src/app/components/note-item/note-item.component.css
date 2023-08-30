@@ -1,0 +1,55 @@
+:host {
+  width: 300px;
+  height: 160px;
+  border-radius: 36px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-around;
+}
+
+p {
+  display: flex;
+  width: 70%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+
+  color: #000;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Roboto;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.14px;
+  text-align: center;
+}
+
+.utils {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.delete__icon {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+  background: url("../../../assets/images/trash-icon.svg");
+  transition: 300ms all ease-in-out;
+}
+
+.delete__icon:hover {
+  background: url("../../../assets/images/trash-icon-red.svg");
+}
+
+.created__at {
+  color: #767676;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Roboto;
+  font-size: 0.9rem;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.14px;
+}

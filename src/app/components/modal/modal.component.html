@@ -1,1 +1,36 @@
-
+<div class="background" [style.display]="display">
+  <form action="">
+    <fieldset id="group2">
+      <input
+        type="radio"
+        name="color"
+        value=""
+        id="color-orange"
+        (change)="noteColor = 'orange'"
+      />
+      <input
+        type="radio"
+        name="color"
+        value=""
+        id="color-blue"
+        (change)="noteColor = '#A2E1FC'"
+      />
+      <input
+        type="radio"
+        name="color"
+        value=""
+        id="color-red"
+        (change)="noteColor = '#FF6666'"
+      />
+    </fieldset>
+    <textarea
+      (input)="onTextAreaInputValueChange($event)"
+      [style.background]="noteColor"
+      cols="30"
+      rows="10"
+    ></textarea>
+    <button type="submit" (click)="createNote(); ($event.preventDefault)">
+      Criar Nota
+    </button>
+  </form>
+</div>

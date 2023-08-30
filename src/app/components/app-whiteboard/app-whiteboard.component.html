@@ -1,7 +1,6 @@
 <ul>
   <app-note-item
-  *ngFor="let todo of mockedItems"
-  [todo]="todo"
-  (deleteItem)="removeItem($event)">
+  *ngFor="let todo of items"
+  [todo]="todo">
   </app-note-item>
 </ul>
