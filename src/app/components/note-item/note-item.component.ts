@@ -22,7 +22,8 @@ export class NoteItemComponent implements OnInit {
   }
 
 
-  formatterDate(time: Date): string {
+  formatterDate(timeStr: Date): string {
+    const time = new Date(timeStr)
     return time.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true })
   }
 
