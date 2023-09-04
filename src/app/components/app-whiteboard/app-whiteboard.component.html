@@ -1,6 +1,12 @@
-<ul>
+<!--
+  Para cada item no array de items ele criara uma nova tag <app-note-item> <app-note-item />
+-->
+<ul *ngIf="items.length > 0">
   <app-note-item
+
   *ngFor="let todo of items"
   [todo]="todo">
   </app-note-item>
 </ul>
+<p *ngIf="items.length === 0"> Você não possui nenhuma nota! </p>
+

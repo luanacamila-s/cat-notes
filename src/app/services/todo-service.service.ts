@@ -5,7 +5,12 @@ import { TodoItem } from 'src/models';
 @Injectable({
   providedIn: 'root'
 })
+
+/**
+  Camada de codigo que gerencia o armazenamento das tarefas.
+*/
 export class TodoService {
+  // estão sendo armazenados no localStorage
   private todos = JSON.parse(localStorage.getItem('todos') ?? '[]') as TodoItem[]
 
   getTodos() {

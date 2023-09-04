@@ -4,7 +4,7 @@
   }}
 </p>
 <div class="utils">
-  <span class="delete__icon" src="../../../assets/images/trash-icon.svg" alt=""></span>
+  <span class="delete__icon" (click)="deleteNote(this.todo.id)" src="../../../assets/images/trash-icon.svg" alt=""></span>
   <h3 class="created__at">
     {{
       this.formatterDate(this.todo.createdAt)
