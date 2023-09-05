@@ -57,15 +57,20 @@ input[type='radio'] {
   height: 50px
 }
 
-#color-orange {
-  accent-color: orange;
+#color-pink {
+  accent-color: rgb(255, 76, 189);
 }
 
-#color-red {
-  accent-color: #FF6666;
+#color-green {
+  accent-color: #69eb6f;
+}
+
+#color-purple {
+  accent-color: #a8a2fc;
+
 }
 
 #color-blue {
   accent-color: #A2E1FC;
-  ;
+
 }
